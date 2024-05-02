@@ -34,6 +34,10 @@ if [[ -z "$VERIFY_INSTALLATION" || "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
     # Copy config files to local system
     sudo cp -r ./configs/* ~/.config
 
+    chmod +x ~/.config/hypr/scripts/tools/*
+    chmod +x ~/.config/hypr/scripts/*
+    chmod +x ~/.config/hypr/*
+
     echo -e "\033[32m\nShalgam installed successfully!🌵 \033[0m"
 fi
 
