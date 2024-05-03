@@ -1,17 +1,22 @@
 {
-    "layer": "top", 
-    "position": "top", 
+    "layer": "top",
+    "position": "top",
     "height": 26,
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["tray", "pulseaudio", "network", "battery", "clock"],
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock"
+    ],
     // Modules configuration
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
+    "custom/logo": {
+        "format": "Shalgam!"
     },
     "tray": {
         // "icon-size": 21,
@@ -29,7 +34,13 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -49,13 +60,17 @@
         "format-source": " {volume}%",
         "format-source-muted": "",
         "format-icons": {
-           "headphone": "",
-           "hands-free": "",
-           "headset": "",
-           "phone": "",
-           "portable": "",
-           "car": "",
-            "default": ["", "", ""]
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
