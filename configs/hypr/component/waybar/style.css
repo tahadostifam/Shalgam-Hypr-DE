@@ -60,7 +60,7 @@ window#waybar {
 #clock {
     background: #0239ee;
     color: #fff ;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bolder;
     
     margin-right: 20px;
@@ -71,7 +71,6 @@ window#waybar {
 #battery {
     background-color: #0239ee;
     color:#fff;
-    font-weight: bolder;
     font-size: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -88,7 +87,6 @@ window#waybar {
 
 #network{
     color:#fff;
-    font-weight: bolder;
 }
 
 #network{
@@ -98,7 +96,6 @@ window#waybar {
 #pulseaudio {
     background-color:  	#0239ee;
     color: #fff;
-    font-weight: bolder;
 }
 
 #custom-media.custom-spotify {
