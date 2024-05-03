@@ -24,7 +24,7 @@
     padding: 0 10px;
     border-radius: 15px;
     background: #11111b;
-    color: #b4befe;
+    color: #fff;
     box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -51,12 +51,12 @@ window#waybar {
 }
 
 #workspaces button.active label{
-    color: #11111b;
+    color: #fff;
     font-weight: bolder;
 }
 
 #workspaces{
-    background-color: transparent;
+    background-color: red;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -176,155 +176,60 @@ window#waybar {
     border-radius: 15px;
 }
 
-
-#custom-cycle_wall{
-    background: rgb(245,194,231);
-    background: linear-gradient(45deg, rgba(245,194,231,1) 0%, rgba(203,166,247,1) 0%, rgba(243,139,168,1) 13%, rgba(235,160,172,1) 26%, rgba(250,179,135,1) 34%, rgba(249,226,175,1) 49%, rgba(166,227,161,1) 65%, rgba(148,226,213,1) 77%, rgba(137,220,235,1) 82%, rgba(116,199,236,1) 88%, rgba(137,180,250,1) 95%); 
-    color: #fff;
-    background-size: 500% 500%;
-    animation: gradient 7s linear infinite;
-    font-weight:  bolder;
-    border-radius: 15px;
-}
-
-#clock label{
-    color: #11111b;
-    font-weight:  bolder;
-}
-
 #clock {
-    background: rgb(205,214,244);
-    background: linear-gradient(118deg, rgba(205,214,244,1) 5%, rgba(243,139,168,1) 5%, rgba(243,139,168,1) 20%, rgba(205,214,244,1) 20%, rgba(205,214,244,1) 40%, rgba(243,139,168,1) 40%, rgba(243,139,168,1) 60%, rgba(205,214,244,1) 60%, rgba(205,214,244,1) 80%, rgba(243,139,168,1) 80%, rgba(243,139,168,1) 95%, rgba(205,214,244,1) 95%); 
-
-    background-size: 200% 300%;
-
-    animation: gradient_f_nh 4s linear infinite;
-    margin-right: 25px;
+    background: #0239ee;
     color: #fff ;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
-    
-    font-size: 15px;
-    padding-top: 5px;
-    padding-right: 21px;
+    font-size: 16px;
     font-weight: bolder;
+    
+    margin-right: 20px;
+    padding-right: 21px;
     padding-left: 20px;
 }
 
-#battery.charging, #battery.plugged {
-    background-color: #94e2d5 ;
-}
-
 #battery {
-    background-color: #11111b;
-    color:#a6e3a1;
+    background-color: #0239ee;
+    color:#fff;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-@keyframes blink {
-    to {
-        background-color: #f9e2af;
-        color:#96804e;
-    }
-}
-
-
-
 #battery.critical:not(.charging) {
-    background-color:  #f38ba8;
-    color:#bf5673;
-    animation-name: blink;
+    background-color:  #cd2252;
+    color:#fff;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-#cpu label{
-    color:#89dceb;
-}
-
-#cpu {
-    background: rgb(30,30,46);
-    background: radial-gradient(circle, rgba(30,30,46,1) 30%, rgba(17,17,27,1) 100%); 
-    color: 	#89b4fa;
-}
-
-#memory {
-    background-color: #cba6f7;
-    color: 	#9a75c7;
+#network{
+    color:#fff;
     font-weight: bolder;
-}
-
-#disk {
-    color: #964B00;
-}
-
-#backlight {
-    color: #90b1b1;
 }
 
 #network{
-    color:#000;
-}
-
-#network.disabled{
-    background-color: #45475a;
-}
-
-#network.disconnected{
-    background: rgb(243,139,168);
-    background: linear-gradient(45deg, rgba(243,139,168,1) 0%, rgba(250,179,135,1) 100%); 
-    color: #fff;
-    font-weight: bolder;
-    padding-top: 3px;
-    padding-right: 11px;
-}
-
-#network.linked, #network.wifi{
-    background-color: #a6e3a1 ;
-}
-
-#network.ethernet{
-    background-color:#f9e2af ;
+    background-color: #0239ee ;
 }
 
 #pulseaudio {
-    background-color:  	#fab387;
-    color: #bf7d54;
+    background-color:  	#0239ee;
+    color: #fff;
     font-weight: bolder;
 }
 
-#pulseaudio.muted {
-    background-color: #90b1b1;
-}
-
-#custom-media {
-    color: #66cc99;
-}
-
 #custom-media.custom-spotify {
-    background-color: #66cc99;
+    background-color: #21ce55;
 }
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
 }
 
-#temperature {
-    background-color: #f9e2af;
-    color:#96804e;
-}
-
-#temperature.critical {
-    background-color: #f38ba8 ;
-    color:#bf5673;
-}
-
 #tray {
-    background-color: #2980b9;
+    background-color: #0239ee;
 }
 
 #tray > .passive {
@@ -333,6 +238,6 @@ window#waybar {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: #0239ee;
 }
 

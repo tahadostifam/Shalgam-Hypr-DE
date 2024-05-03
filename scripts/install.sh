@@ -32,11 +32,7 @@ if [[ -z "$VERIFY_INSTALLATION" || "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
     echo -e "\033[33m        List: bar, btop, dunst, hypr, kitty, wofi \033[0m"    
 
     # Copy config files to local system
-    sudo cp -r ./configs/* ~/.config
-
-    chmod +x ~/.config/hypr/scripts/tools/*
-    chmod +x ~/.config/hypr/scripts/*
-    chmod +x ~/.config/hypr/*
+    bash ./scripts/install_config_files.sh
 
     echo -e "\033[32m\nShalgam installed successfully!🌵 \033[0m"
 fi
