@@ -1,18 +1,11 @@
 * {
-    font-family:
-        FiraCode,
-        Noto Sans,
-        FontAwesome,
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
-    font-size: 12px;
+  font-family: FiraCode, Noto Sans, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
 }
 
 #custom-logo {
-    font-weight: bolder;
-    margin-left: 17px;
+  font-weight: bolder;
+  margin-left: 17px;
 }
 
 #clock,
@@ -21,112 +14,94 @@
 #pulseaudio,
 #tray,
 #custom-logo {
-    padding: 0 10px;
-    border-radius: 15px;
-    background: #0239ee;
-    color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
-    margin-top: 10px;
-    margin-right: 5px;
+  padding: 0 10px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+  margin-top: 10px;
+  margin-right: 5px;
 }
 
 window#waybar {
-    background: transparent;
+  background: transparent;
 }
 
 #workspaces button label {
-    color: #fff;
-    font-weight: bolder;
+  color: #fff;
+  font-weight: bolder;
 }
 
 #workspaces button.active label {
-    color: #fff;
-    font-weight: bolder;
+  color: #fff;
+  font-weight: bolder;
 }
 
 #workspaces {
-    background-color: transparent;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 5px;
+  background: transparent;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
 }
 
 #workspaces button {
-    background-color: #11111b;
-    border-radius: 15px;
-    margin-right: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-weight: bolder;
-    color: #fff;
-    transition: all 0.1s ease-in-out;
+  background: #11111b;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bolder;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
 }
 
 #workspaces button.active {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 3px;
-    background: #0239ee;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
 }
 
 #clock {
-    background: #0239ee;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bolder;
-
-    margin-right: 17px;
-    padding-right: 21px;
-    padding-left: 20px;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-right: 17px;
+  padding-right: 21px;
+  padding-left: 20px;
 }
 
 #battery {
-    background-color: #0239ee;
-    color: #fff;
-    font-size: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#battery.critical:not(.charging) {
-    background-color: #cd2252;
-    color: #fff;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  color: #fff;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #network {
-    color: #fff;
+  color: #fff;
 }
 
 #network {
-    background-color: #0239ee;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
 }
 
 #pulseaudio {
-    background-color: #0239ee;
-    color: #fff;
-}
-
-#custom-media.custom-spotify {
-    background-color: #21ce55;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  color: #fff;
 }
 
 #tray {
-    background-color: #0239ee;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
 }
 
 #tray > .passive {
-    -gtk-icon-effect: dim;
+  -gtk-icon-effect: dim;
 }
 
 #tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #0239ee;
+  -gtk-icon-effect: highlight;
+  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
 }

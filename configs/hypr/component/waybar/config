@@ -49,7 +49,8 @@
         "tooltip-format": " {ifname} via {gwaddr}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠ {ifname}",
-        "format-alt": " {ifname}: {ipaddr}/{cidr}"
+        "format-alt": " {ifname}: {ipaddr}/{cidr}",
+        "on-click-right": "xfce4-terminal --hide-menubar --hide-scrollbar -e /usr/bin/nmtui"
     },
     "pulseaudio": {
         "scroll-step": 5, // %, can be a float

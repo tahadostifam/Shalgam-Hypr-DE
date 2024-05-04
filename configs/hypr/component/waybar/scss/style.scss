@@ -1,0 +1,118 @@
+// Define variables
+$theme-color: linear-gradient(90deg, rgba(67,1,138,1) 0%, rgba(106,0,255,1) 100%);
+
+* {
+    font-family:
+        FiraCode,
+        Noto Sans,
+        FontAwesome,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-size: 12px;
+}
+
+#custom-logo {
+    font-weight: bolder;
+    margin-left: 17px;
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#tray,
+#custom-logo {
+    padding: 0 10px;
+    border-radius: 15px;
+    background: $theme-color;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+#workspaces button label {
+    color: #fff;
+    font-weight: bolder;
+}
+
+#workspaces button.active label {
+    color: #fff;
+    font-weight: bolder;
+}
+
+#workspaces {
+    background: transparent;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#workspaces button {
+    background: #11111b;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+}
+
+#workspaces button.active {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    background: $theme-color;
+}
+
+#clock {
+    background: $theme-color;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
+
+    margin-right: 17px;
+    padding-right: 21px;
+    padding-left: 20px;
+}
+
+#battery {
+    background: $theme-color;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#network {
+    color: #fff;
+}
+
+#network {
+    background: $theme-color;
+}
+
+#pulseaudio {
+    background: $theme-color;
+    color: #fff;
+}
+
+#tray {
+    background: $theme-color;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background: $theme-color;
+}
