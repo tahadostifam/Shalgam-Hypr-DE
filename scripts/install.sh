@@ -10,7 +10,7 @@ echo -e "\033[33mNOTICE: This package is new born and only supports [ArchLinux, 
 echo -e "\n"
 echo -e "\033[35mAre you sure you want to install Shalgam on your Linux distro? [Y, n]\033[0m"
 
-read VERIFY_INSTALLATION
+read -r VERIFY_INSTALLATION
 
 if [[ -z "$VERIFY_INSTALLATION" || "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
     if [ -f /etc/apt/sources.list ]; then
@@ -28,12 +28,11 @@ if [[ -z "$VERIFY_INSTALLATION" || "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
     echo -e "Please run install script manually."
     fi
 
-    echo -e "\033[33mNOTICE: Some configuration files may be overwritten by script. \033[0m"    
-    echo -e "\033[33m        List: bar, btop, dunst, hypr, kitty, wofi \033[0m"    
-
     # Copy config files to local system
     bash ./scripts/install_config_files.sh
 
     echo -e "\033[32m\nShalgam installed successfully!🌵 \033[0m"
+else
+    echo -e "\033[35mBad command!\033[0m"
 fi
 
