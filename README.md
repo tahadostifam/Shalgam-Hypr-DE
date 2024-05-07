@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://github.com/tahadostifam/Shalgam-Hypr-DE">
-        <img src="./images/shalgam-logo-rounded.png" alt="Logo" width="150" height="150">
+        <img src="./images/shalgam.png" alt="Logo" width="150" height="150">
     </a>
     <h2>Shalgam!</h2>
 </div>
