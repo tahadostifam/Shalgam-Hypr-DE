@@ -9,12 +9,17 @@
     "modules-center": [],
     "modules-right": [
         "tray",
+        "custom/keyboard_layout",
         "pulseaudio",
         "network",
         "battery",
         "clock"
     ],
     // Modules configuration
+    "custom/keyboard_layout": {
+        "exec": "~/.config/hypr/scripts/layout",
+        "interval": 1
+    },
     "custom/logo": {
         "format": "Shalgam!"
     },
