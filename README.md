@@ -22,5 +22,4 @@ sudo chmod +x ./scripts/*
 
 ### Screenshots
 
-<img src="./images/screenshots/screenshot1.png" alt="Screenshot 1">
-<img src="./images/screenshots/screenshot2.png" alt="Screenshot 1">
+<img src="./images/screenshots/screenshot_1.png" alt="Screenshot 1">
