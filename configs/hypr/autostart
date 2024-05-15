@@ -17,7 +17,4 @@ $scripts/wall $config/wallpapers/default &
 # other
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
-notify-send -a aurora "hello $(whoami)" &
-
-# nm-applet indicator
-nm-applet --indicator
+notify-send -a aurora "Hello $(whoami)" &

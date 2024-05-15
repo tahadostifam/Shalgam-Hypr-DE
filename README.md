@@ -22,4 +22,9 @@ sudo chmod +x ./scripts/*
 
 ### Screenshots
 
-<img src="./images/screenshots/screenshot_1.png" alt="Screenshot 1">
+<img src="./images/screenshots/screenshot_1.jpg" alt="Screenshot 1">
+
+### Keymaps
+```bash
+
+```

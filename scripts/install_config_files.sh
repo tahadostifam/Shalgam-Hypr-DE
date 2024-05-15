@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-sudo cp -r ./configs/* ~/.config
+cp -r ./configs/* $HOME/.config
 
-chmod +x ~/.config/hypr/scripts/tools/*
-chmod +x ~/.config/hypr/scripts/*
-chmod +x ~/.config/hypr/*
+chmod +x $HOME/.config/hypr/scripts/tools/*
+chmod +x $HOME/.config/hypr/scripts/*
+chmod +x $HOME/.config/hypr/*

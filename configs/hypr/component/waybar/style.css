@@ -13,7 +13,8 @@
 #network,
 #pulseaudio,
 #tray,
-#custom-logo {
+#custom-logo,
+#language {
   padding: 0 10px;
   border-radius: 15px;
   background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
