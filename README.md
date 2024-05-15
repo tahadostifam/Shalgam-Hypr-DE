@@ -28,9 +28,13 @@ sudo chmod +x ./scripts/*
 - Vscode Themes
   - <https://github.com/ahmadawais/shades-of-purple-vscode>
 
+- Chrome Themes
+  - <https://chromewebstore.google.com/detail/nebula/hlmflgnnmmojlnbmaokpfcjdkhkjbnok>
+
 ### Screenshots
 
 <img src="./images/screenshots/screenshot_1.jpg" alt="Screenshot 1">
+<img src="./images/screenshots/screenshot_2.jpg" alt="Screenshot 2">
 
 ### Keymaps
 
