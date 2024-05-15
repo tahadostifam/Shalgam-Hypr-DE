@@ -12,6 +12,10 @@ Shalgam is a meticulously crafted customization for the revolutionary Hyprland w
 ### Install
 
 ```bash
+# Arch Based Distributions
+paru -S hyprland-git gnome-keyringpython3 rustup kitty xfce4-terminal polkit-gnome wofi xdg-desktop-portal-hyprland-git tty-clock-git swaylock grim slurp jq dunst wl-clipboard swww-git pavucontrol ttf-font-awesome jp2a nemo fastfetch meson wlogout
+
+
 git clone https://github.com/tahadostifam/Shalgam-Hypr-DE
 cd Shalgam-Hypr-DE
 sudo chmod +x ./scripts/*
