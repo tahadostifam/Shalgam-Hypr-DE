@@ -12,9 +12,9 @@ $scripts/launch_waybar &
 $scripts/tools/dynamic &
 
 # wallpaper
-$scripts/wall $config/wallpapers/default &
+$scripts/wall ~/.config/hypr/wallpapers/default &
 
 # other
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
 notify-send -a aurora "Hello $(whoami)" &

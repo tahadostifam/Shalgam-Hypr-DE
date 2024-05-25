@@ -22,7 +22,7 @@
     },
     "custom/logo": {
         "format": "⏻",
-        "on-click": "~/.config/wofi/powermenu.sh"
+        "on-click": "nwg-bar"
     },
     "tray": {
         // "icon-size": 21,

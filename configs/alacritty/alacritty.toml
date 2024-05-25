@@ -1,0 +1,28 @@
+[cursor]
+blink_interval = 400
+
+[cursor.style]
+blinking = "Always"
+shape = "Beam"
+
+[font]
+size = 15
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[scrolling]
+history = 10000
+multiplier = 1
+
+[window]
+decorations = "full"
+opacity = 0.8
+
+[window.dimensions]
+columns = 80
+lines = 20
+
+[window.padding]
+x = 2
