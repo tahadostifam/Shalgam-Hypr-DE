@@ -12,12 +12,12 @@
 #battery,
 #network,
 #pulseaudio,
-#tray,
 #custom-logo,
+#tray,
 #language {
   padding: 0 10px;
   border-radius: 15px;
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background-color: #13b128;
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
   margin-top: 10px;
@@ -45,6 +45,10 @@ window#waybar {
   margin-left: 5px;
 }
 
+#workspaces button:hover{
+  border: none;
+}
+
 #workspaces button {
   background: #11111b;
   border-radius: 15px;
@@ -60,11 +64,11 @@ window#waybar {
   padding-right: 20px;
   padding-left: 20px;
   padding-bottom: 3px;
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background: #13b128;
 }
 
 #clock {
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background: #13b128;
   color: #fff;
   font-size: 15px;
   font-weight: bolder;
@@ -74,7 +78,7 @@ window#waybar {
 }
 
 #battery {
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background: #13b128;
   color: #fff;
   font-size: 15px;
   padding-left: 15px;
@@ -86,23 +90,19 @@ window#waybar {
 }
 
 #network {
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background: #13b128;
 }
 
 #pulseaudio {
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background: #13b128;
   color: #fff;
 }
 
-#tray {
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
-}
-
-#tray > .passive {
+#tray>.passive {
   -gtk-icon-effect: dim;
 }
 
-#tray > .needs-attention {
+#tray>.needs-attention {
   -gtk-icon-effect: highlight;
-  background: linear-gradient(90deg, rgb(67, 1, 138) 0%, rgb(106, 0, 255) 100%);
+  background: #13b128;
 }

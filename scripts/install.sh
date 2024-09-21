@@ -2,9 +2,9 @@
 
 if [ "$(command -v jp2a)" ]; then
     jp2a ./images/shalgam.png
+    echo -e "\n"
 fi
 
-echo -e "\n"
 echo -e "\033[35mAre you sure you want to install Shalgam on your Linux distro? [Y, n]\033[0m"
 
 read -r VERIFY_INSTALLATION

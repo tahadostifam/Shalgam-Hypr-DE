@@ -2,23 +2,12 @@
     "layer": "top",
     "position": "top",
     "height": 26,
-    "modules-left": [
-        "custom/logo",
-        "hyprland/workspaces"
-    ],
+    "modules-left": ["custom/logo", "hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": [
-        "tray",
-        "hyprland/language",
-        "pulseaudio",
-        "network",
-        "battery",
-        "clock"
-    ],
-    // Modules configuration
+    "modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "battery", "clock"],
     "hyprland/language": {
-        "format-en": "🇺🇸 EN",
-        "format-fa": "🇮🇷 FA"
+        "format-en": "👑 EN",
+        "format-fa": "🦁 FA"
     },
     "custom/logo": {
         "format": "⏻",
@@ -36,14 +25,8 @@
         //"format": "{:%Y-%m-%d %H:%M}"
     },
     "battery": {
-        "format": "{icon} {capacity}%",        
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -70,13 +53,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
-        "on-click": "pavucontrol"
+            "default": ["", "", ""]
+        }
     }
-
 }

@@ -14,7 +14,7 @@ window {
   color: #fff;
   font-weight: bold;
   background: #12121c;
-  border: 2px solid linear-gradient(90deg, #43018a 0%, #6a00ff 100%);
+  border: 2px solid #2bff48f1;
   outline: none;
   border-radius: 15px;
   margin: 10px;
@@ -25,7 +25,7 @@ window {
   border: 10px solid transparent;
   background-color: #12121c;
   margin: 4px;
-  color: linear-gradient(90deg, #43018a 0%, #6a00ff 100%);
+  color: #2bff48f1;
   font-weight: bold;
   border-radius: 15px;
 }
@@ -62,5 +62,5 @@ window {
   border: none;
   border-radius: 15px;
   color: #fff;
-  background: linear-gradient(90deg, #43018a 0%, #6a00ff 100%);
+  background: #2bff48f1;
 }
