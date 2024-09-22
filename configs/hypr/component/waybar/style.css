@@ -14,12 +14,12 @@
 #pulseaudio,
 #custom-logo,
 #tray,
-#language {
-  padding: 0 10px;
+#language, #window {
   border-radius: 15px;
   background-color: #13b128;
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+  padding: 0 10px;
   margin-top: 10px;
   margin-right: 5px;
 }
@@ -41,7 +41,7 @@ window#waybar {
 #workspaces {
   background: transparent;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-left: 5px;
 }
 

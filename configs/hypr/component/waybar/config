@@ -2,9 +2,23 @@
     "layer": "top",
     "position": "top",
     "height": 26,
-    "modules-left": ["custom/logo", "hyprland/workspaces"],
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
     "modules-center": [],
-    "modules-right": ["tray", "hyprland/language", "pulseaudio", "network", "battery", "clock"],
+    "modules-right": [
+        "tray",
+        "hyprland/language",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock"
+    ],
+    "hyprland/window": {
+        "format": "{initialTitle}"
+    },
     "hyprland/language": {
         "format-en": "👑 EN",
         "format-fa": "🦁 FA"
@@ -26,7 +40,13 @@
     },
     "battery": {
         "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -53,7 +73,11 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         }
     }
 }
