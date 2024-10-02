@@ -6,7 +6,7 @@
 </div>
 
 <p>
-Shalgam is a meticulously crafted customization for the revolutionary Hyprland window manager, designed to elevate your desktop experience. Dive into a world of streamlined aesthetics, intuitive workflows, and unparalleled performance.
+Shalgam is a meticulously crafted customization for the revolutionary Hyprland wayland compositor, designed to elevate your desktop experience. Dive into a world of streamlined aesthetics, intuitive workflows, and unparalleled performance.
 </p>
 
 ### Install
