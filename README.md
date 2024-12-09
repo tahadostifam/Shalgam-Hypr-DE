@@ -9,11 +9,17 @@
 Shalgam is a meticulously crafted customization for the revolutionary Hyprland wayland compositor, designed to elevate your desktop experience. Dive into a world of streamlined aesthetics, intuitive workflows, and unparalleled performance.
 </p>
 
+### Screenshots
+
+<img src="./images/screenshots/screenshot_1.jpg" alt="Screenshot 1">
+<img src="./images/screenshots/screenshot_2.jpg" alt="Screenshot 2">
+
+
 ### Install
 
 ```bash
 # Arch Based Distributions
-paru -S hyprland-git gnome-keyringpython3 rustup kitty xfce4-terminal polkit-gnome wofi xdg-desktop-portal-hyprland-git tty-clock-git swaylock grim slurp jq dunst swww-git pavucontrol ttf-font-awesome jp2a nemo fastfetch
+paru -S hyprland-git gnome-keyringpython3 kitty polkit-gnome wofi xdg-desktop-portal-hyprland-git tty-clock-git swaylock grim slurp jq dunst swww-git pavucontrol ttf-font-awesome jp2a nemo fastfetch
 
 
 git clone https://github.com/tahadostifam/Shalgam-Hypr-DE
@@ -30,11 +36,6 @@ sudo chmod +x ./scripts/*
 
 - Chrome Themes
   - <https://chromewebstore.google.com/detail/nebula/hlmflgnnmmojlnbmaokpfcjdkhkjbnok>
-
-### Screenshots
-
-<img src="./images/screenshots/screenshot_1.jpg" alt="Screenshot 1">
-<img src="./images/screenshots/screenshot_2.jpg" alt="Screenshot 2">
 
 ### Keymaps
 
