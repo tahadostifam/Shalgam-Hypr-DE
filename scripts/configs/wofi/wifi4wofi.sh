@@ -1,0 +1,84 @@
+#!/usr/bin/env bash
+#
+#This is a fork of wofi-wifi-menu from fourstepper at https://github.com/fourstepper/wofi-wifi-menu,
+#which is a fork of rofi-wifi-menu from zbaylin at https://github.com/zbaylin/rofi-wifi-menu.
+#
+#This fork was done by Michael Williams of Fearless Geek Media.
+#
+# Starts a scan of available broadcasting SSIDs
+# nmcli dev wifi rescan
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+FIELDS=SSID,SECURITY
+POSITION=0
+YOFF=0
+XOFF=0
+
+if [ -r "$DIR/config" ]; then
+	source "$DIR/config"
+elif [ -r "$HOME/.config/wofi/wifi_config" ]; then
+	source "$HOME/.config/wofi/wifi_config"
+else
+	echo "WARNING: config file not found! Using default values."
+fi
+
+LIST=$(nmcli --fields "$FIELDS" device wifi list | sed '/^--/d')
+
+killall yad -9 -r "wifi4wofi scan"
+# For some reason wofi always approximates character width 2 short... hmmm
+RWIDTH=$(($(echo "$LIST" | head -n 1 | awk '{print length($0); }')*14))
+
+# Gives a list of known connections so we can parse it later
+CONNECTIONS=$(nmcli connection show)
+# Really janky way of telling if there is currently a connection
+CONSTATE=$(nmcli -fields WIFI g)
+
+if [[ "$CONSTATE" =~ "enabled" ]]; then
+	TOGGLE="❌ Toggle OFF"
+elif [[ "$CONSTATE" =~ "disabled" ]]; then
+	TOGGLE="✅ Toggle ON"
+fi
+
+
+CHENTRY=$(echo -e "$TOGGLE\n⚫️ Manual\n$LIST" | uniq -u | wofi -i -d --prompt "Wi-Fi SSID: " --location center --width 450 --height 250)
+
+CHSSID=$(echo "$CHENTRY" | sed  's/\s\{2,\}/\|/g' | awk -F "|" '{print $1}')
+
+KNOWNCON=$(echo $CONNECTIONS | grep -c "$CHSSID")
+
+# If the user inputs "manual" as their SSID in the start window, it will bring them to this screen
+if [ "$CHENTRY" = "manual" ] ; then
+	# Manual entry of the SSID and password (if appplicable)
+	MSSID=$(echo "Enter the SSID of the network (SSID,password)" | wofi -d "Manual Entry: " --lines 1)
+	# Separating the password from the entered string
+	MPASS=$(echo "$MSSID" | awk -F "," '{print $2}')
+
+	# If the user entered a manual password, then use the password nmcli command
+	if [ "$MPASS" = "" ]; then
+		nmcli dev wifi con "$MSSID"
+	else
+		nmcli dev wifi con "$MSSID" password "$MPASS"
+	fi
+elif [ "$CHENTRY" = "toggle on" ]; then
+	nmcli radio wifi on
+
+elif [ "$CHENTRY" = "toggle off" ]; then
+	nmcli radio wifi off
+else
+	# If the connection is already in use, then this will still be able to get the SSID
+	if [ "$CHSSID" = "*" ]; then
+		CHSSID=$(echo "$CHENTRY" | sed  's/\s\{2,\}/\|/g' | awk -F "|" '{print $3}')
+	fi
+
+	# Parses the list of preconfigured connections to see if it already contains the chosen SSID. This speeds up the connection process
+	if [[ $KNOWNCON = 1 ]]; then
+		nmcli con up "$CHSSID"
+	else
+		if [[ "$CHENTRY" =~ "WPA2" ]] || [[ "$CHENTRY" =~ "WEP" ]]; then
+			WIFIPASS=$(echo "if connection is stored, hit enter" | wofi -P -d --prompt "password" --lines 1 --location "$POSITION" --yoffset "$YOFF" --xoffset "$XOFF" --width $RWIDTH)
+		fi
+		
+		nmcli dev wifi con "$CHSSID" password "$WIFIPASS"
+	fi
+fi

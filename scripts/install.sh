@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
 
-if [ "$(command -v jp2a)" ]; then
-    jp2a ./images/shalgam.png
-    echo -e "\n"
-fi
+CONFIGS_LOCATION=~/.config
 
-echo -e "\033[35mAre you sure you want to install Shalgam on your Linux distro? [Y, n]\033[0m"
+echo -e "\033[35mAre you sure you want to install this HyprLand theme on your Linux distro? [Y, n]\033[0m \c"
 
 read -r VERIFY_INSTALLATION
 
-if [[ -z "$VERIFY_INSTALLATION" || "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
-    # Copy config files to local system
-    bash ./scripts/install_config_files.sh
+if [[ "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
+    cp -r $CONFIGS_LOCATION/dunst ./configs
+    cp -r $CONFIGS_LOCATION/hypr ./configs
+    cp -r $CONFIGS_LOCATION/wofi ./configs
+    cp -r ./configs/* $HOME/.config
+    chmod +x $HOME/.config/hypr/scripts/tools/*
+    chmod +x $HOME/.config/hypr/scripts/*
+    chmod +x $HOME/.config/hypr/*
 
-    echo -e "\033[32m\nShalgam installed successfully!🌵 \033[0m"
+    echo -e "\033[32mInstalled successfully!🌵 \033[0m"
 else
-    echo -e "\033[35mBad command!\033[0m"
+    echo -e "\033[35mNot installed.\033[0m"
 fi
 

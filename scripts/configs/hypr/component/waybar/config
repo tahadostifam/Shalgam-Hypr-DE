@@ -1,0 +1,83 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 26,
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces",
+        "hyprland/window"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "tray",
+        "hyprland/language",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock"
+    ],
+    "hyprland/window": {
+        "format": "{initialTitle}"
+    },
+    "hyprland/language": {
+        "format-en": "👑 EN",
+        "format-fa": "🦁 FA"
+    },
+    "custom/logo": {
+        "format": "⏻",
+        "on-click": "nwg-bar"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        //"format-alt": "{:%Y-%m-%d}"
+        "format": "{:L%Y-%m-%d<small> [%a] </small> %I:%M <tt><small>%p</small></tt>}"
+        //"format": "{:%Y-%m-%d %H:%M}"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": " {ifname}",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "⚠ {ifname}",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}",
+        "on-click-right": "~/.config/wofi/wifi4wofi.sh"
+    },
+    "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": " {icon} {volume}% {format_source}",
+        "format-bluetooth-muted": "  {icon} {format_source}",
+        "format-muted": "  {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        }
+    }
+}
