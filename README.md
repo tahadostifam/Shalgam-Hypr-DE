@@ -4,8 +4,7 @@ A meticulously crafted customization for the revolutionary Hyprland wayland comp
 
 ### Screenshots
 
-<img src="./images/screenshots/screenshot_1.jpg" alt="Screenshot 1">
-<img src="./images/screenshots/screenshot_2.jpg" alt="Screenshot 2">
+<img src="./screenshots/screenshot.png" alt="Screenshot">
 
 
 ### Install
@@ -14,8 +13,8 @@ A meticulously crafted customization for the revolutionary Hyprland wayland comp
 # Open Suse Tumblweed
 sudo zypper in hyprland nwg-bar kitty nautilus wofi polkit-gnome xdg-desktop-portal-gnome hyprlock grim slurp swappy jq dunst libnotify swww pavucontrol jp2a fastfetch
 
-git clone https://github.com/tahadostifam/Shalgam-Hypr-DE
-cd Shalgam-Hypr-DE
+git clone --depth=1 https://github.com/tahadostifam/Dark-Green-HyprLand-Config
+cd Dark-Green-HyprLand-Config
 sudo chmod +x ./scripts/*
 ./scripts/install.sh
 ```
