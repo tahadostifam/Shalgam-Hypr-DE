@@ -19,7 +19,7 @@ Shalgam is a meticulously crafted customization for the revolutionary Hyprland w
 
 ```bash
 # Arch Based Distributions
-paru -S hyprland-git nwg-bar gnome-keyringpython3 kitty polkit-gnome nautilus wofi xdg-desktop-portal-hyprland-git tty-clock-git swaylock grim slurp swappy jq dunst swww-git pavucontrol ttf-font-awesome jp2a nemo fastfetch
+sudo zypper in hyprland nwg-bar gnome-keyringpython3 kitty nautilus wofi xdg-desktop-portal-kde6 hyprlock grim slurp swappy jq dunst swww-git pavucontrol jp2a fastfetch
 
 
 git clone https://github.com/tahadostifam/Shalgam-Hypr-DE
