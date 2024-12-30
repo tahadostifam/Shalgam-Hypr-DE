@@ -6,7 +6,7 @@
 </div>
 
 <p>
-Shalgam is a meticulously crafted customization for the revolutionary Hyprland wayland compositor, designed to elevate your desktop experience. Dive into a world of streamlined aesthetics, intuitive workflows, and unparalleled performance.
+A meticulously crafted customization for the revolutionary Hyprland wayland compositor, designed to elevate your desktop experience. Dive into a world of streamlined aesthetics, intuitive workflows, and unparalleled performance.
 </p>
 
 ### Screenshots
@@ -18,60 +18,20 @@ Shalgam is a meticulously crafted customization for the revolutionary Hyprland w
 ### Install
 
 ```bash
-# Arch Based Distributions
-sudo zypper in hyprland nwg-bar gnome-keyringpython3 kitty nautilus wofi xdg-desktop-portal-kde6 hyprlock grim slurp swappy jq dunst swww-git pavucontrol jp2a fastfetch
-
+# Open Suse Tumblweed
+sudo zypper in hyprland nwg-bar kitty nautilus wofi polkit-gnome xdg-desktop-portal-gnome hyprlock grim slurp swappy jq dunst libnotify swww pavucontrol jp2a fastfetch
 
 git clone https://github.com/tahadostifam/Shalgam-Hypr-DE
 cd Shalgam-Hypr-DE
 sudo chmod +x ./scripts/*
-
 ./scripts/install.sh
 ```
 
 ### Optional
 
 - Vscode Themes
-  - <https://github.com/ahmadawais/shades-of-purple-vscode>
-
-- Chrome Themes
-  - <https://chromewebstore.google.com/detail/nebula/hlmflgnnmmojlnbmaokpfcjdkhkjbnok>
-
-### Keymaps
-
-```txt
-- Open Terminal (kitty)
-SUPER + RETURN
-
-- Open File Manager (nemo)
-SUPER + E
-
-- Quit current window
-SUPER + Q
-
-- Toggle Floating
-SUPER + S
-
-- App manager (wofi)
-SUPER + R
-
-- Power Menu (wifi4wofi)
-SUPER + M
-
-- Lock screen
-SUPER + L
-
-- Switch between workspaces
-SUPER + 1
-SUPER + 2
-SUPER + 3
-
-- Move window to another workspace
-SUPER + SHIFT + 1
-SUPER + SHIFT + 2
-SUPER + SHIFT + 3
-```
+  - <https://marketplace.visualstudio.com/items?itemName=magson.dark-hacker-theme>
 
 ### Contribution
 
-Open to contribution on any part of the project! Create PR.💜🦄
+Open to contribution on any part of the project! Create PR.🤌🏿🤌🏿
