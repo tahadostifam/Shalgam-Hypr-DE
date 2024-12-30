@@ -1,13 +1,6 @@
-<div align="center">
-    <a href="https://github.com/tahadostifam/Shalgam-Hypr-DE">
-        <img src="./images/shalgam.png" alt="Logo" width="150" height="150">
-    </a>
-    <h2>Shalgam!</h2>
-</div>
+# Dark Green HyprLand Config
 
-<p>
 A meticulously crafted customization for the revolutionary Hyprland wayland compositor, designed to elevate your desktop experience. Dive into a world of streamlined aesthetics, intuitive workflows, and unparalleled performance.
-</p>
 
 ### Screenshots
 
