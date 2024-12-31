@@ -4,9 +4,8 @@
 config=$HOME/.config/hypr
 scripts=$config/scripts
 
-
-/usr/libexec/xdg-desktop-portal &
 /usr/libexec/polkit-gnome-authentication-agent-1 &
+/usr/bin/gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &
 
 # notification daemon
 dunst &

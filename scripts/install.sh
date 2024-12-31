@@ -7,10 +7,9 @@ echo -e "\033[35mAre you sure you want to install this HyprLand theme on your Li
 read -r VERIFY_INSTALLATION
 
 if [[ "$VERIFY_INSTALLATION" =~ ^[Yy]$ ]]; then
-    cp -r $CONFIGS_LOCATION/dunst ./configs
-    cp -r $CONFIGS_LOCATION/hypr ./configs
-    cp -r $CONFIGS_LOCATION/wofi ./configs
-    cp -r ./configs/* $HOME/.config
+    cp ./configs/* $CONFIGS_LOCATION
+    cp ./configs/nwg-bar/style.css $CONFIGS_LOCATION/nwg-bar/style.css
+    cp ./configs/nwg-bar/bar.json $CONFIGS_LOCATION/nwg-bar/bar.json
     chmod +x $HOME/.config/hypr/scripts/tools/*
     chmod +x $HOME/.config/hypr/scripts/*
     chmod +x $HOME/.config/hypr/*
